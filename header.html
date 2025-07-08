@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DIS Management Pvt Ltd</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  
+  <!-- Bootstrap Bundle JS (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- <link rel="icon" href="logo.jpeg"> -->
+  
+  <style>
+    body {
+      font-family: 'Manrope', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .topbar {
+      background-color: #002060;
+      color: white;
+      font-size: 14px;
+      padding: 0.5rem 0;
+    }
+
+    .topbar .contact-info i,
+    .topbar .social-icons i {
+      margin-right: 5px;
+    }
+
+    .topbar .social-icons a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+
+    .main-navbar {
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      padding: 1rem 0;
+    }
+
+    .navbar-brand img {
+      height: 50px;
+    }
+
+    .navbar-nav .nav-link {
+      font-weight: 600;
+      color: #002060 !important;
+      margin: 0 10px;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #0056b3 !important;
+    }
+
+    .dropdown-menu {
+      border-radius: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #f8f9fa;
+    }
+     @media (max-width: 1200px) {
+        #mainNav{
+            /* position: relative !important; */
+            right: 2rem;
+        }
+     }
+    /* @media (max-width: 420px) {
+        .brandname{
+            transform: scaleX(.7) translateX(-100px);
+        }
+    } */
+    @media (max-width: 992px) {
+      .topbar .contact-info,
+      .topbar .social-icons {
+        text-align: center;
+        margin: 5px 0;
+      }
+      #mainNav{
+            position: relative !important;
+            right: 0;
+        }
+    .dropdown-menu{
+        border: 0 !important;
+        box-shadow: none;
+    }
+    .navbar-collapse{
+        align-items: start !important;
+    }
+    /* .collapse{
+        position: absolute !important;
+        right: 0 !important;
+    } */
+    }
+     @media (max-width: 800px) {
+        #mainNav{
+            position: relative !important;
+            right: auto !important;
+        }
+    }
+     @media (max-width: 412px) {
+        .mgt{
+            display: none;
+        }
+        #mainNav{
+            position: relative !important;
+            right: auto !important;
+        }
+        }
+    #mainNav{
+        position: absolute;
+        right: 3.2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="container-fluid topbar">
+    <div class="row px-3">
+      <div class="col-md-6 contact-info d-flex align-items-center">
+        <i class="fas fa-phone"></i> 9051972409
+        <!-- <span class="fw-bold mx-2">&nbsp</span> -->
+        <i class="fas fa-envelope"></i> Dis.facility@outlook.com
+      </div>
+      <div class="col-md-6 text-md-end social-icons d-flex justify-content-md-end justify-content-center align-items-center">
+        <a href="https://www.facebook.com/share/1E9FgqxJqe" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navbar -->
+  <nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/logo.jpeg" alt="Logo" class="me-2">
+        <div class="fw-bold brandname" style="color:#002060;">DIS <span class="mgt">Management Pvt Ltd</span></div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <!-- About Us -->
+          <li class="nav-item dropdown">
+            <a class="nav-link " href="about.html" data-bs-toggle="">About Us</a>
+            <!-- <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Our Company</a></li>
+              <li><a class="dropdown-item" href="#">Vision & Mission</a></li>
+              <li><a class="dropdown-item" href="#">Leadership</a></li>
+            </ul> -->
+          </li>
+
+          <!-- Services -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="security.html">Security Guard Services</a></li>
+              <li><a class="dropdown-item" href="housekeeping.html">Housekeeping Services</a></li>
+              <li><a class="dropdown-item" href="officeboy.html">Office Boy Services</a></li>
+              <li><a class="dropdown-item" href="bouncer.html">Bouncer & Gunman</a></li>
+              <li><a class="dropdown-item" href="electrician.html">Electrician & Plumber</a></li>
+              <li><a class="dropdown-item" href="gardener.html">Gardener & Lift Man</a></li>
+              <li><a class="dropdown-item" href="waiter.html">Waiter & Hospitality Staff</a></li>
+              <li><a class="dropdown-item" href="payroll.html">Payroll Management</a></li>
+            </ul>
+
+          </li>
+
+          <!-- IT/IOTs -->
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link" href="testimonial.html" data-bs-toggle="">Testimonial</a> -->
+            <!-- <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Surveillance</a></li>
+              <li><a class="dropdown-item" href="#">Automation</a></li>
+              <li><a class="dropdown-item" href="#">AI & Analytics</a></li>
+            </ul> -->
+          <!-- </li> -->
+
+          <!-- Media -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="media.html" data-bs-toggle="">Media</a>
+            <!-- <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">News</a></li>
+              <li><a class="dropdown-item" href="#">Gallery</a></li>
+            </ul> -->
+          </li>
+
+          <!-- Resources -->
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Resources</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Brochures</a></li>
+              <li><a class="dropdown-item" href="#">Reports</a></li>
+            </ul>
+          </li> -->
+
+          <!-- Other Links -->
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">DDUGKY</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="career.html">Career</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact&nbspUs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
