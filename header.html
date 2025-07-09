@@ -98,6 +98,10 @@
     .navbar-collapse{
         align-items: start !important;
     }
+    .navbar-nav{
+      transform: translateX(-500px);
+    }
+
     /* .collapse{
         position: absolute !important;
         right: 0 !important;
@@ -108,14 +112,47 @@
             position: relative !important;
             right: auto !important;
         }
+        .navbar-nav{
+          transform: translateX(-400px);
+        }
     }
-     @media (max-width: 412px) {
+     @media (max-width: 612px) {
         .mgt{
             display: none;
         }
         #mainNav{
             position: relative !important;
-            right: auto !important;
+            /* right: auto !important; */
+            left: 0 !important;
+        }
+        .navbar-nav{
+          transform: translateX(-350px);
+        }
+        }
+    @media (max-width: 512px) {
+        .mgt{
+            display: none;
+        }
+        #mainNav{
+            position: relative !important;
+            /* right: auto !important; */
+            left: 0 !important;
+        }
+        .navbar-nav{
+          transform: translateX(-240px);
+        }
+        }
+    @media (max-width: 400px) {
+        .mgt{
+            display: none;
+        }
+        #mainNav{
+            position: relative !important;
+            /* right: auto !important; */
+            left: 0 !important;
+        }
+        .navbar-nav{
+          transform: translateX(-180px);
         }
         }
     #mainNav{
@@ -160,14 +197,14 @@
         </button>
 
         <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-center">
+          <ul class="navbar-nav ms-auto ">
             <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="product.html">Product</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="download.html">Download</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="video.html">Video</a></li>
             <!-- <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li> -->
             <li class="nav-item">
-              <a href="contact.html" class="btn btn-warning rounded-pill px-4 fw-bold ms-3" style="background-color: #f26522; border: none;">
+              <a href="contact.html" class="btn btn-warning rounded-pill px-4 fw-bold" style="background-color: #f26522; border: none;">
                 Contact Us
               </a>
             </li>
