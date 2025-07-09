@@ -118,60 +118,115 @@
     .bg-orange {
         background-color: #ec6901;
         }
-        .object-fit-cover {
+    .object-fit-cover {
         object-fit: cover;
         height: 100%;
+    }
+    .hero-section {
+        height: 720px;
+        background-color: #000;
+        position: relative;
+        /* border-bottom-right-radius: 60px; */
         }
+
+        .hero-background {
+        height: auto;
+        background: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/8c41af36480857.571e5729a85e8.gif') center center / cover no-repeat;
+        position: relative;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* border-bottom-right-radius: 60px; */
+        }
+
+        .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        /* border-bottom-right-radius: 60px; */
+        }
+
+        .bottom-orange-line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: #f26522;
+        transform: rotate(-1deg);
+        transform-origin: left;
+        }
+
+        .bottom-orange-line.thinner {
+        height: 1.5px;
+        background: #f26522;
+        margin-top: 5px;
+        transform: rotate(-0.5deg);
+        }
+        .end-30{
+            right: 30px;
+        }
+        .bottom-30{
+            bottom: 10px;
+        }
+        .bottom-20{
+            bottom: 20px;
+        }
+        .bottom-10{
+            bottom: 10px;
+        }
+        .py-10{
+            padding-top: 10rem;
+            background-color: #000;
+        }
+
 
     </style>
 </head>
 <body>
     <section class="minscreen">
         <header id="theader" class="w-100 fixed-top"></header>
-        <section class="hero pt-0 pb-2 w-100 bg-dark position-relative">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                
-                <!-- Indicators -->
-                <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
-                </div>
+        <section class="hero-section position-relative overflow-hidden w-100">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
 
-                <!-- Slide Content -->
-                <div class="carousel-inner">
-                <!-- Single Slide -->
-                <div class="carousel-item active">
-                    <img src="https://camo.githubusercontent.com/6f87276238fc4d6742e582f1084db307e09aec5e9f223bea9935204fdfe3e5d7/68747470733a2f2f737465616d75736572696d616765732d612e616b616d616968642e6e65742f7567632f313735303139323538303737373332363336302f333434333938313339313833393146333344354235413638314344314532463830333530353643322f" class="d-block w-100 heroCarouselImg" alt="Onward Rise">
-                    
-                    <!-- Dark Gradient Overlay -->
-                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.1) 100%);"></div>
-
-                    <!-- Caption -->
-                    <div class="carousel-caption d-md-block text-start px-5 pb-5" style="z-index: 2;">
-                    <h1 class="display-4 fw-bold text-white">ONWARD RISE</h1>
-                    <p class="lead fw-medium text-white">Extraordinary Wisdom Gathering</p>
-                    </div>
-                </div>
-                </div>
-
-                <!-- Optional Controls (if more slides added) -->
-                <!--
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-                <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-                <span class="visually-hidden">Next</span>
-                </button>
-                -->
+            <div class="container h-100 d-flex align-items-center">
+            <div class="text-white" style="position: fixed; z-index: 0; overflow: hidden;">
+                <h1 class="display-4 fw-bold text-white">ONWARD RISE</h1>
+                <p class="lead">Extraordinary Wisdom Gathering</p>
+            </div>
             </div>
 
-            <!-- Orange Border Decoration -->
-            <div class="position-absolute bottom-0 start-50 w-50 text-center mx-auto" style="border-bottom: 2px solid #f26522;"></div>
-            <div class="position-absolute bottom-0 start-0 w-50 text-center mx-auto" style="border-bottom: 3px solid #12cef0;"></div>
+            <!-- Orange borders -->
+            <!-- Curved Orange Line Decoration -->
+            <!-- Orange Bottom Curve (Styled Exactly Like in Image) -->
+            <!-- Orange Corner Border SVG (Vertical Right + Slant Bottom) -->
+            <svg class="position-absolute bottom-30 end-30 w-100 h-100" viewBox="0 0 1920 380" preserveAspectRatio="none" style="z-index: 4; pointer-events: none;">
+            <path d="
+                M1919 20
+                V250
+                Q1919 300 1840 300
+                L0 370
+                
+                "
+                fill="none"
+                stroke="#f26522"
+                stroke-width="1.5"
+            />
+            <line x1="150" y1="390" x2="1700" y2="332" stroke="#f26522" stroke-width="1.5" />
+            <!-- <path d="M150,80 L1700,60 L1700,62 L150,82 Z" fill="#000" /> -->
+
+            </svg>
+            <!-- Orange Slanted Bar -->
+             <div class="position-absolute bottom-0 end-0 w-100 py-10" style="clip-path: polygon(100% 0%, 100% 100%, 0% 100%);"></div>
+
+
+        </div>
         </section>
 
-        <section class="position-relative text-white w-100" style="background: url('https://w0.peakpx.com/wallpaper/675/369/HD-wallpaper-machine-high-tech.jpg') no-repeat center center/cover; padding: 100px 0;">
+
+        <!-- <section class="position-relative text-white w-100" style="background: url('https://w0.peakpx.com/wallpaper/675/369/HD-wallpaper-machine-high-tech.jpg') no-repeat center center/cover; padding: 100px 0;">
         <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.6); z-index: 1;"></div>
         <div class="container position-relative" style="z-index: 2;">
             <div class="row">
@@ -195,10 +250,95 @@
                 </div>
             </div>
         </div>
+        </section> -->
+        <section class="position-relative text-white w-100 py-5 px-2" style="background-color: #000;">
+        <div class="container position-relative w-100" style="z-index: 2;">
+            <div class="row">
+            <!-- <h1 class="fw-bold mx-auto my-4 mb-5 text-center">About Us</h1> -->
+            <h2 class="fw-bold display-5 text-center">ABOUT US</h2>
+            <!-- Left Column -->
+             <p class="my-2"> &nbsp</p>
+            <div class="col-lg-4">
+                <!-- Brand Positioning -->
+                <div class="my-4">
+                <h5 class="fw-bold">
+                    <i class="fas fa-bullseye text-warning me-2"></i> Brand Positioning
+                </h5>
+                <p class="text-light  mb-1">✔ We listen to market needs, integrate R&D, constantly improve, and stay ahead in the precision machinery industry.</p>
+                </div>
+
+                <!-- Mission -->
+                <div class="mb-4">
+                <h5 class="fw-bold">
+                    <i class="fas fa-crosshairs text-warning me-2"></i> Mission
+                </h5>
+                <ul class="text-light  ps-3">
+                    <li>Starting with the end in mind, creating value for customers</li>
+                    <li>Dedicated to achieving glory for clients</li>
+                    <li>Becoming a forward-thinking leader of intelligence</li>
+                </ul>
+                </div>
+
+                <!-- Vision -->
+                <div class="mb-4">
+                <h5 class="fw-bold">
+                    <i class="fas fa-eye text-warning me-2"></i> Vision
+                </h5>
+                <ul class="text-light  ps-3">
+                    <li>The premier brand in precision machinery within the Chinese-speaking community</li>
+                    <li>A leading manufacturer of smart machinery in Taiwan and an integrator for Industry 4.0</li>
+                    <li>Realizing infinite interaction possibilities with Smart Production, Smart Manufacturing for our clients</li>
+                </ul>
+                </div>
+            </div>
+
+            <!-- Center Image (Head Graphic) -->
+            <div class="col-lg-5 text-center d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+                <div class="top-50 position-absolute" style="transform: translateY(-40%) scale(1.2);">
+                    <img src="images/edgemission.png" alt="Head Graphic" class="img-fluid" style="max-height: 450px;" />
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-lg-3">
+                <!-- Business Scope -->
+                <div class="mb-4">
+                <h5 class="fw-bold">
+                    <i class="fas fa-network-wired text-warning me-2"></i> Business Scope
+                </h5>
+                <p class="text-light  mb-1">✔ Vertical integration deepens our operations, branching into diversification, automation, and internationalization.</p>
+                </div>
+
+                <!-- Business Philosophy -->
+                <div class="mb-4">
+                <h5 class="fw-bold">
+                    <i class="fas fa-balance-scale text-warning me-2"></i> Business Philosophy
+                </h5>
+                <ul class="text-light  ps-3">
+                    <li>Quality first, service foremost</li>
+                    <li>Innovation drives improvement, unity fosters harmony</li>
+                    <li>Promoting internationally, everyone’s satisfaction</li>
+                </ul>
+                </div>
+
+                <!-- Quality Policy -->
+                <div class="mb-4">
+                <h5 class="fw-bold">
+                    <i class="fas fa-certificate text-warning me-2"></i> Quality Policy
+                </h5>
+                <p class="text-light  mb-1">
+                    ✔ To ensure customer satisfaction, everyone should adhere to standards and get the job done right the first time. To achieve zero defects in quality, continuous improvement is required from all staff.
+                </p>
+                </div>
+            </div>
+
+            </div>
+        </div>
         </section>
 
-        <section class="py-5 text-white w-100" style="background-color: #000;">
-        <div class="container">
+
+        <section class="py-5 text-white w-100" style="background-color: #000; overflow: hidden; z-index: 5;">
+        <div class="container position-relative" style="z-index: 5;" >
             <!-- Section Title -->
             <div class="text-center mb-4">
             <h2 class="fw-bold display-5">PRODUCT & SERVICE</h2>
