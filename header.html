@@ -163,7 +163,7 @@
       transition: 1s;
     }
     .navbar:hover{
-      background-color: rgba(0, 0, 0, 0.7) !important;
+      background-color: rgba(255, 255, 255, 0.8) !important;
     }
     /* Hide navbar when scrolling down */
     .navbar-scroll-up {
@@ -176,7 +176,7 @@
       transition: top 0.4s;
     }
     .bg-transparent{
-      background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.1));
+      background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.6));
     }
 
 
@@ -190,10 +190,10 @@
     
     <!-- Transparent Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top py-3 navbar-scroll-up">
-      <div class="container overflow-hidden rounded-0" style="box-shadow: inset 0 0 50px 100px transparent;">
+      <div class="container overflow-hidden rounded-0">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="images/edgelogo.png" alt="Logo" style="height: 40px; box-shadow: inset 0 0 50px 100px white;" class="mx-2 rounded-0 p-1">
-          <span class="fw-bold text-white shadow" style="text-shadow: -2px 0px 5px black; border-bottom: solid 4px orange; padding-bottom: 5px;">Edge Machines</span>
+          <img src="images/edgelogo.png" alt="Logo" style="height: 40px; box-shadow: inset 0 0 50px 100px transparent;" class="mx-2 rounded-0 p-1">
+          <span class="fw-bold text-white" style="text-shadow: -2px 0px 5px black; border-bottom: solid 4px orange; padding-bottom: 5px;">Edge Machines</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
           <span class="navbar-toggler-icon"></span>
@@ -201,13 +201,13 @@
 
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto ">
-            <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="about.html">About Us</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="https://www.profitableratecpm.com/c2u2e34qt3?key=0092de9f8094e677228ef07ed26427d6">Product</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="https://www.profitableratecpm.com/c2u2e34qt3?key=0092de9f8094e677228ef07ed26427d6">Download</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="https://www.profitableratecpm.com/c2u2e34qt3?key=0092de9f8094e677228ef07ed26427d6">Video</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="https://www.profitableratecpm.com/c2u2e34qt3?key=0092de9f8094e677228ef07ed26427d6">Product</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="https://www.profitableratecpm.com/c2u2e34qt3?key=0092de9f8094e677228ef07ed26427d6">Download</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="https://www.profitableratecpm.com/c2u2e34qt3?key=0092de9f8094e677228ef07ed26427d6">Video</a></li>
             <li class="nav-item">
-              <a href="contact.html" class="btn btn-warning rounded-pill px-4 fw-bold" style="background-color: #f26522; border: none;">
+              <a href="contact.html" class="btn btn-warning rounded-pill px-4 fw-bold shadow" style="background-color: #f26522; border: none;">
                 Contact Us
               </a>
             </li>
@@ -235,12 +235,12 @@
         // Scrolling down
         navbar.classList.remove("navbar-scroll-up");
         navbar.classList.add("navbar-scroll-down");
-        document.querySelector(".navbar").style.setProperty("background", "rgba(0, 0, 0, 0.4)", "important");
+        document.querySelector(".navbar").style.setProperty("background", "rgba(255, 255, 255, 0.6)", "important");
       } else {
         // Scrolling up
         navbar.classList.remove("navbar-scroll-down");
         navbar.classList.add("navbar-scroll-up");
-        document.querySelector(".navbar").style.setProperty("background", "rgba(0, 0, 0, 0.7)", "important");
+        document.querySelector(".navbar").style.setProperty("background", "rgba(255, 255, 255, 0.8)", "important");
         // document.querySelector(".navbar").style.background="rgba(0, 0, 0, 0.6) !important;";
       }
 
