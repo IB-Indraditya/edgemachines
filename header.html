@@ -74,7 +74,35 @@
         box-shadow: none !important;
       }
     }
+    
   </style>
+  <style>
+  /* Enable sub-dropdowns */
+    .dropdown-submenu {
+      position: relative;
+      z-index: 10;
+    }
+
+    .dropdown-submenu > .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -1px;
+      display: none;
+    }
+
+    .dropdown-submenu:hover > .dropdown-menu {
+      display: block;
+    }
+
+    /* Optional arrow */
+    .dropdown-submenu > .dropdown-toggle::after {
+      content: ' ▶';
+      float: right;
+      margin-right: 5px;
+      display: none;
+    }
+  </style>
+
 </head>
 <body>
 
@@ -102,14 +130,83 @@
               <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Product
               </a>
-              <ul class="dropdown-menu left-align text-start rounded-0" aria-labelledby="navbarDropdown">
+              <!-- <ul class="dropdown-menu left-align text-start rounded-0" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="product.html">CNC Turning</a></li>
                 <li><a class="dropdown-item" href="product.html">VMC</a></li>
                 <li><a class="dropdown-item" href="product-category1.html">CNC POLYGON Turning</a></li>
                 <li><a class="dropdown-item" href="product-category2.html">HMC</a></li>
                 <li><a class="dropdown-item" href="product-category2.html">CNC TURNMIL Center</a></li>
                 <li><a class="dropdown-item" href="product-category2.html">CNC SPM</a></li>
+              </ul> -->
+              <ul class="dropdown-menu text-start rounded-0" aria-labelledby="navbarDropdown">
+
+                <!-- CNC Turning -->
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">CNC Turning &nbsp&nbsp <i class="fa-solid fa-arrow-right"></i></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a class="dropdown-item" href="#">Turning Center</a></li>
+                    <li><a class="dropdown-item" href="#">Linear Tooling</a></li>
+                  </ul>
+                </li>
+
+                <!-- VMC -->
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">VMC &nbsp&nbsp&nbsp&nbsp <i class="fa-solid fa-arrow-right"></i></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a class="dropdown-item" href="#">Mindril Series</a></li>
+                    <li><a class="dropdown-item" href="#">EVM Series</a></li>
+                  </ul>
+                </li>
+
+                <!-- CNC POLYGON Turning -->
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">CNC POLYGON Turning <i class="fa-solid fa-arrow-right"></i></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a class="dropdown-item" href="#">AGAM 400 PT</a></li>
+                    <li><a class="dropdown-item" href="#">AGAM 500 PT</a></li>
+                  </ul>
+                </li>
+
+                <!-- HMC -->
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">HMC </a>
+                  <!-- <ul class="dropdown-menu rounded-0"> -->
+                    <!-- <li><a class="dropdown-item" href="#">HMC A</a></li> -->
+                    <!-- <li><a class="dropdown-item" href="#">HMC B</a></li> -->
+                  <!-- </ul> -->
+                </li>
+
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">VTL </a>
+                  <!-- <ul class="dropdown-menu rounded-0"> -->
+                    <!-- <li><a class="dropdown-item" href="#">SPM A</a></li> -->
+                    <!-- <li><a class="dropdown-item" href="#">SPM B</a></li> -->
+                  <!-- </ul> -->
+                </li>
+
+                <!-- CNC TURNMIL Center -->
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">CNC TURNMIL Center <i class="fa-solid fa-arrow-right"></i></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a class="dropdown-item" href="#">ETMC 300</a></li>
+                    <li><a class="dropdown-item" href="#">ETMC 500</a></li>
+                    <li><a class="dropdown-item" href="#">ETMC 750</a></li>
+                    <li><a class="dropdown-item" href="#">ETMC 1000</a></li>
+                    <!-- <li><a class="dropdown-item" href="#">ETMC 300</a></li> -->
+                  </ul>
+                </li>
+
+                <!-- CNC SPM -->
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">CNC SPM </a>
+                  <!-- <ul class="dropdown-menu rounded-0"> -->
+                    <!-- <li><a class="dropdown-item" href="#">SPM A</a></li> -->
+                    <!-- <li><a class="dropdown-item" href="#">SPM B</a></li> -->
+                  <!-- </ul> -->
+                </li>
+
               </ul>
+
             </li>
 
             <li class="nav-item"><a class="nav-link text-dark" href="https://www.profitableratecpm.com/c2u2e34qt3?key=0092de9f8094e677228ef07ed26427d6">Download</a></li>
